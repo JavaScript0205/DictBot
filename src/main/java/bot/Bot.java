@@ -22,8 +22,8 @@ public class Bot extends TelegramLongPollingBot {
         Message msg = update.getMessage();
         User usr = msg.getFrom();
         String text = msg.getText();
-
         SendMessage sm = new SendMessage();
+
         sm.setChatId(msg.getChatId());
         //TODO: "/start", "/help", "/remove hello", "/contains hello"
         if (text.equals("/help")) {
